@@ -1,0 +1,148 @@
+@media screen and (max-width: 768px){
+  body{
+    width: 100% !important;
+  }
+  .foot p:first-child{
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (min-width: 768px){
+  body{
+    width: 80% !important;
+    margin: 0 auto;
+  }
+}
+
+.title h2{
+  margin-bottom: 20px;
+  color: #4aa593;
+  text-shadow:0px 0px 2px #29a0ef;
+}
+
+.key{
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.key input:focus {
+  border-color: #39c5bb;
+}  
+    
+.answer{
+  width: 100%;
+  position: relative;
+  height: 70vh;
+}
+
+.answer .tips{
+  display: block;
+}
+
+.answer .tips h3{
+  color:red;
+}
+
+.answer .tips img{
+  margin-top: 30px;
+  border:1px solid #39c5bb;
+  box-shadow: 0px 1px 10px 0px #39c5bb;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.answer .ipt{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  margin: 0 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  width: calc(100% - 30px);
+  height: 40px;
+  border: 1px solid #e7eaec;
+  box-shadow: 0px 0px 10px 0px rgba(154, 152, 152, 0.2);
+}
+.answer .ipt textarea {
+  resize: none;
+  overflow-y: auto;
+  border: none;
+  box-shadow:none;
+}
+.answer .ipt textarea:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.answer #chatWindow {
+  max-height: calc(70vh - 100px);
+  height:auto;
+  overflow-y: auto;
+}
+
+.answer #chatWindow .message-bubble {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px dashed #e7eaec;
+}
+
+
+.answer #chatWindow .message-bubble .message-text{
+  font-size: 18px;
+  margin-left:15px;
+  white-space: pre-wrap;
+}
+
+.answer .chat-icon {
+  width: 35px;
+  height: 35px;
+  border-radius:5px;
+}
+
+.answer #chatBtn{
+  background-color: #39c5bb;
+  border-color: #39c5bb
+}
+
+.foot p:first-child{
+  margin-bottom: 10px;
+}
+
+.foot p:nth-child(2){
+  margin-bottom: 0;
+}
+
+.backgroundImage {
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: -100;
+	background-color: #fff;
+	opacity: 55%;
+	user-select: none;
+}
+
+@media screen and (orientation: portrait) {
+	.backgroundImage {
+		background-image: url(../images/phone1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.backgroundImage {
+		background-image: url(../images/pc.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
